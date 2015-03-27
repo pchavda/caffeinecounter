@@ -42,16 +42,6 @@
         android:id="@+id/total" />
 
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:layout_width="wrap_content"
-        android:textColor="@color/black"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:singleLine="true"
-        android:text="mg"
-        android:id="@+id/total" />
 
 
     <TextView
