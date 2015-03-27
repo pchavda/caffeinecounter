@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    >
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/Home"
+
+
+        />
+    <item
+        android:id="@+id/reset_all"
+        android:title="@string/ResetAll"
+
+        />
+    <item
+        android:id="@+id/history"
+        android:title="@string/History" />
+    <item
+        android:id="@+id/units"
+        android:title="Units" />
+    <item
+        android:id="@+id/change_limit"
+        android:title="@string/ChangeLimit" />
+    <item
+        android:id="@+id/info"
+        android:title="@string/Info" />
+    <item
+        android:id="@+id/edit_type"
+        android:title="@string/Types" />
+    <item
+        android:id="@+id/save_to_file"
+        android:title="@string/SaveFile" />
+    <item
+        android:id="@+id/vibrate"
+        android:title="@string/TurnOffVib" />
+    <item
+        android:id="@+id/set_rewards"
+        android:title="@string/DisableRewards" />
+
+</menu>

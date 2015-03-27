@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MainButton">
+        <item name="android:layout_height">@dimen/large_button_size</item>
+        <item name="android:layout_width">@dimen/large_button_size</item>
+    </style>
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:padding="5dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/timeDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/dateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:text="03/03/2012"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/setTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/timeDisplay"
+        android:text="@string/SetTime"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/setDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/dateDisplay"
+        android:layout_marginLeft="80dp"
+        android:text="@string/SetDate"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/sizePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setDate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/SetAmount"
+        android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/setAmount"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sizePrompt"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/setDate"
+
+        android:textColor="@color/white" />
+
+
+    <EditText
+        android:id="@+id/editSize"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/setDate"
+        android:layout_alignBottom="@+id/setDate"
+        android:layout_alignParentRight="true"
+        android:inputType="number"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinner"
+        android:text="@string/Cancel"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Save"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/save"
+        android:layout_alignBottom="@+id/save"
+        android:layout_alignParentRight="true"
+        android:text="@string/Delete"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

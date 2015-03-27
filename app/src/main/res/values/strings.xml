@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Congratulations">Congratulations!</string>
+    <string name="DisableRewards">Disable\nrewards</string>
+    <string name="WholeHistory">All days</string>
+    <string name="OneMonth">30 days</string>
+    <string name="TwoMonth">60 days</string>
+    <string name="ThreeMonth">90 days</string>
+    <string name="NewLimit">Enter new limit (mg/day)</string>
+    <string name="Plot">Plot</string>
+    <string name="PlotData">Daily Caffeine Consumption</string>
+    <string name="ChangeLimit">Change Limit</string>
+    <string name="Short">8 oz (Short)</string>
+    <string name="Tall">12 oz (Tall)</string>
+    <string name="Grande">16 oz (Grande)</string>
+    <string name="Venti">20 oz (Venti)</string>
+    <string name="All">All</string>
+    <string name="Blended">Blended</string>
+    <string name="Home">Home</string>
+    <string name="ResetDay">Reset Day</string>
+    <string name="Caff">mg Caffeine</string>
+    <string name="History">History</string>
+    <string name="ResetAll">Reset All</string>
+    <string name="ChangeUser">Change User</string>
+    <string name="AmountPrompt">oz (or # shots)</string>
+    <string name="Over">over limit</string>
+    <string name="SmallSize">6 oz</string>
+    <string name="MediumSize">8 oz</string>
+    <string name="LargeSize">12 oz</string>
+    <string name="ExtraLargeSize">16 oz</string>
+    <string name="Other">Other</string>
+    <string name="Reset">Reset</string>
+    <string name="WhatSize">What size?</string>
+    <string name="TotalCaffeine">Total Caffeine:</string>
+    <string name="Limit">Your Limit:</string>
+    <string name="Drinks">Drinks</string>
+    <string name="Coffee">Coffee</string>
+    <string name="Espresso">Espresso</string>
+    <string name="BlackTea">Black Tea</string>
+    <string name="Tea">Tea</string>
+    <string name="Sodas">Sodas/Other</string>
+    <string name="SodasNOther">Sodas/Other</string>
+    <string name="Coke">Coke</string>
+    <string name="Pepsi">Pepsi</string>
+    <string name="MtDew">Mountain Dew</string>
+    <string name="DRPepper">Dr. Pepper</string>
+    <string name="Date">Date: </string>
+    <string name="Title">Caffeine Counter</string>
+    <string name="LimitAmount">300 mg/day</string>
+    <string name="DrinkSize">Select drink size</string>
+    <string name="Enter">Enter</string>
+    <string name="Date:">Date</string>
+    <string name="Mg">mg</string>
+    <string name="CaffeineAmount">Caffeine</string>
+    <string name="Finish">Finish</string>
+    <string name="DateList">Total Caffeine per day</string>
+    <string name="DateDrinkList">Drinks Consumed</string>
+    <string name="AddDrink">Add a Drink</string>
+    <string name="AddCoffee">Add a Coffee</string>
+    <string name="AddBlackTea">Add a Tea Drink</string>
+    <string name="Energy">Energy</string>
+    <string name="AddEspresso">Add an Espresso</string>
+    <string name="SelectDrink">Select Soda/Power Drink</string>
+    <string name="EditDrink">Edit Drink</string>
+    <string name="SetTime">Set Time</string>
+    <string name="SetDate">Set Date</string>
+    <string name="SetAmount">Amount (oz/sht)</string>
+    <string name="Save">Save</string>
+    <string name="Delete">Delete</string>
+    <string name="Cancel">Cancel</string>
+    <string name="NewType">New Drink Type</string>
+    <string name="EnterType">Drink Type</string>
+    <string name="CaffPer">Caffeine per oz (or shot)</string>
+    <string name="EditType">Edit Drink Types</string>
+    <string name="Types">Drink Types</string>
+    <string name="Type">Drink Type</string>
+    <string name="Category">Category</string>
+    <string name="AddType">Add Drink Type</string>
+    <string name="SaveFile">Save CSV</string>
+    <string name="To">To:</string>
+    <string name="Cc">CC:</string>
+    <string name="Ff">FF:</string>
+    <string name="Send">Send</string>
+    <string name="SendTitle">CSV file of drink history saved.</string>
+    <string name="Subject">Subject:</string>
+    <string name="DeleteFile">Delete File</string>
+    <string name="DeleteExistingFile">Delete Existing File</string>
+    <string name="From">From:</string>
+    <string name="SendFile">Send File</string>
+    <string name="Select">Select Drink</string>
+    <string name="Thanks">Thank you</string>
+    <string name="Milliliters">Change to ml</string>
+    <string name="Ounces">Change to oz</string>
+    <string name="ResetToday">Reset Today</string>
+    <string name="TapPrompt">Tap date for details</string>
+    <string name="AddTypeToApp">Add Drink to App</string>
+    <string name="ClickDrink">Select a drink and click on it.</string>
+    <string name="TurnOffVib">Turn Off Vibrate</string>
+  	
+  	
+  	<string name="InfoText">Thanks for choosing Caffeine Counter! \n\n
+  
+	Most of the functions on this app should be self-explanatory. 
+	You can add drinks, edit/delete them by selecting Menu/History, 
+	clicking the date of the drink, and clicking the drink. You can 
+	also plot your daily caffeine history (once you have 2 days of 
+	data) by selecting Menu/Plot, and save or email a CSV file with 
+	your drink data (if you want to view it in a spreadsheet program 
+	like Excel) by selecting Menu/More/Save CSV. \n\n
+
+        You can also add new drink types to the database, either by pressing
+        \"Drink Not Found\" in the drink selector view, or by navigating to
+        Menu/More/Drink Types/Add New Drink in the menu. If you click on \"Drink Not Found\"
+        you will be directed to www.energyfiend.com where
+        you can select a drink type. Once you select a drink you will be prompted to
+        add the drink to the database. Press the Add button and a dialog will
+        appear with the values of that drink inserted in the fields. Simply press
+        the Enter button and the drink will be added to your database. If you navigate to Menu/More/DrinkTypes/Add New Drink
+        the Add Drink dialog will appear, but you will have to supply the name and caffeine amounts
+        yourself.\n\n
+
+	The app\'s default is to vibrate whenever you add a drink that goes 
+	over your daily caffeine limit. You can turn this off/on at 
+	Menu/More/Disable Vibrate. The app will reward you with certificates 
+	(of no value) when you keep under your limit for various lengths of time.
+	You can turn this off at Menu/More/Disable Rewards. \n\n
+  	   
+	Caffeine amounts were obtained from the following sources:\n\n
+
+
+		\thttp://www.energyfiend.com\n\n
+		\t\"Nutrition by the Cup\", Starbucks drink nutrition guide 
+		(available at any Starbucks store).		 \n\n
+	
+	These were converted (when needed) to a per oz amount.
+	You can view or edit these amounts by selecting the Menu/Drink 
+	Types menu option (For Starbucks, to see/edit the amounts, select 
+	the drink on Drink Types menu). There you can also add new drink 
+	types (provided you know the caffeine amounts).\n\n
+	
+	This app also can display values in metric units. However, sizes and caffeine amounts for the drinks are
+    stored using ounces and are simply converted to the corresponding values in milliters for display. \n\n
+  	    
+	The Mayo Clinic (http://www.mayoclinic.com/health/caffeine/NU00600) recommends keeping to 200-300mg
+	of caffeine a day. Caffeine Counter\'s limit can be changed to a different 
+	value by selecting "Change Limit" in the menu options.\n\n
+
+	If you have any questions, suggestions or other comments feel free to 
+	email the developer at detroitteatime@gmail.com.\n\n
+	
+	</string>
+
+    <string name="Info">Info</string>
+
+    <string name="Agree">I Agree </string>
+    <string name="DisclaimerTitle">Disclaimer</string>
+    <string name="Refuse">No Thanks</string>
+    <string name="accessabilityMessage">"Picture indicating drink size. "</string>
+
+
+</resources>

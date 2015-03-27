@@ -1,0 +1,4 @@
+Though the calculations performed by this application, along with the supplied caffeine amounts contained in the drinks listed, are believed to be accurate, caffeine amounts vary from drink to drink. By downloading and using Caffeine Counter, you assume full responsibility for the accuracy of displayed caffeine amounts.
+	
+
+

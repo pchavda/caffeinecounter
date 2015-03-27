@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.detroitteatime.caffeinecounter"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1">
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="false" />
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/Title">
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.CaffeineCounterActivity"
+            android:label="@string/Title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.InfoView"
+            android:noHistory="true" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.DrinkSelector"
+            android:label="@string/Select"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.Plot"
+            android:label="@string/PlotData"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.Info"
+            android:label="@string/InfoText"
+            android:noHistory="true" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.SendDialog"
+            android:label="@string/SaveFile"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.DrinkDialog"
+            android:label="@string/AddDrink"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.DrinkDialogNonLinear"
+            android:label="@string/AddDrink"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.EditType"
+            android:label="@string/EditType"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.EditTypeStarbucks"
+            android:label="@string/Select"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.DrinkUpdater"
+            android:label="@string/EditDrink"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.AddDrinkView"
+            android:noHistory="true" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.NewTypeDialog"
+            android:label="@string/AddType"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.DayList"
+            android:label="@string/DateList" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.TypeList"
+            android:label="@string/Types"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.DayDrinkList"
+            android:label="@string/DateDrinkList"></activity>
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.SodaList"
+            android:label="@string/SelectDrink"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.detroitteatime.caffeinecounter.LimitDialog"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" />
+    </application>
+
+</manifest>

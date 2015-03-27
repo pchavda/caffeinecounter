@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/NewLimitPrompt"
+        android:text="@string/NewLimit"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/Amount"
+        android:text=""
+        android:minWidth="150sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NewLimitPrompt"
+        android:layout_marginLeft="20dp"
+        android:inputType="number" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Finish"
+        android:id="@+id/Finish"
+        android:layout_marginLeft="10sp"
+        android:layout_below="@id/NewLimitPrompt"
+        android:layout_toRightOf="@id/Amount"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

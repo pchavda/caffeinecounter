@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:text="@string/Date"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/DateNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Date"
+
+        android:layout_toRightOf="@id/Date"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:tag="land" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/DateNumber"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10sp"></RelativeLayout>
+
+    <Button
+        android:id="@+id/Coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relativeLayout1"
+        android:background="#00000000"
+        android:drawableTop="@drawable/coffee_button"
+        android:text="@string/Coffee" />
+
+    <Button
+        android:id="@+id/Blended"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relativeLayout1"
+        android:layout_toRightOf="@id/Coffee"
+        android:background="#00000000"
+        android:drawableTop="@drawable/espresso_button"
+        android:text="@string/Blended" />
+
+    <Button
+        android:id="@+id/Tea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relativeLayout1"
+        android:layout_toRightOf="@id/Blended"
+        android:background="#00000000"
+        android:drawableTop="@drawable/black_tea_button"
+        android:text="@string/Tea" />
+
+    <Button
+        android:id="@+id/Soda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/relativeLayout1"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/Energy"
+        android:background="#00000000"
+        android:drawableTop="@drawable/cola_button"
+        android:text="@string/SodasNOther" />
+
+    <Button
+        android:id="@+id/Energy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Soda"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/Tea"
+        android:background="#00000000"
+        android:drawableTop="@drawable/energy_button"
+        android:text="@string/Energy" />
+
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Date"
+        android:layout_below="@+id/Date"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/TotalCaffeine"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Total"
+        android:layout_below="@+id/Total">
+
+        <TextView
+            android:id="@+id/TotalCaffeine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:text="0 mg"
+            android:textColor="#008000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/Warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Over"
+            android:textColor="@color/red"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Drinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Tea"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Drinks"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/ResetToday"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/YourLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Drinks"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/frameLayout1"
+        android:text="@string/Limit"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Drinks"
+        android:layout_toRightOf="@id/YourLimit"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/LimitAmount"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

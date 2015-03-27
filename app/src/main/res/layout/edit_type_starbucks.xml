@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/typePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:text="@string/Type"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/enterPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+
+        android:text="@string/Caff"
+        android:textColor="@color/black"
+        android:layout_below="@id/typePrompt" />
+
+    <TextView
+        android:id="@+id/shortPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/Short"
+
+        android:textColor="@color/black"
+        android:layout_below="@id/enterPrompt"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/tallPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/enterPrompt"
+        android:layout_marginTop="10dp"
+        android:text="@string/Tall"
+        android:layout_toRightOf="@id/shortPrompt"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/grandePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tallPrompt"
+        android:layout_below="@id/enterPrompt"
+        android:layout_marginTop="10dp"
+        android:text="@string/Grande"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/ventiPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/grandePrompt"
+        android:layout_below="@id/enterPrompt"
+        android:layout_marginTop="10dp"
+        android:text="@string/Venti"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+
+    <EditText
+        android:id="@+id/enterShort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/shortPrompt"
+        android:layout_below="@id/shortPrompt"
+
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/enterTall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/shortPrompt"
+        android:layout_alignLeft="@id/tallPrompt"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@id/shortPrompt" />
+
+    <EditText
+        android:id="@+id/enterGrande"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/grandePrompt"
+        android:layout_below="@id/shortPrompt"
+
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/enterVenti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ventiPrompt"
+        android:layout_below="@id/shortPrompt"
+
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/enterNewType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterGrande"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:text="@string/Enter" />
+
+    <Button
+        android:id="@+id/deleteType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/enterNewType"
+        android:layout_alignBottom="@+id/enterNewType"
+        android:layout_toLeftOf="@+id/enterNewType"
+        android:text="@string/Delete"
+        android:textColor="@color/white" />
+
+    <Spinner
+        android:id="@+id/spinnerStarbucks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/enterShort"
+        android:layout_alignTop="@+id/deleteType"
+        android:layout_toLeftOf="@+id/deleteType" />
+
+</RelativeLayout>

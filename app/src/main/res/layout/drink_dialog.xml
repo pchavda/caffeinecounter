@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/WhatSize"
+        android:layout_below="@+id/WhatSize"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="16 oz"
+        android:textColor="@color/black" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:progress="50" />
+
+    <ImageView
+        android:id="@+id/sizeClue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/accessabilityMessage"
+        android:src="@drawable/grande" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Finish"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/convert"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/seekBar"
+        android:layout_marginTop="20dp"
+        android:text="@string/Milliliters"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/mgCaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_toRightOf="@id/size"
+        android:text="test"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/moreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/finish"
+        android:layout_alignParentTop="true"
+        android:text="Drink Info"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/WhatSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekBar"
+        android:layout_below="@+id/moreInfo"
+        android:text="@string/WhatSize"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
